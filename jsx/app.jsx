@@ -13,9 +13,9 @@ var app				= angular.module( 'app', ['react'] );
 
 //*		Assign default values in the Angular Controller
 var User_ctrl	= function () {
-  this.usuario = { 
-	nombre		: 'Clark',
-	apellido	: 'Kent' };
+	this.usuario = { 
+		nombre		: 'Clark',
+		apellido	: 'Kent' };
 }
 //*/
 
