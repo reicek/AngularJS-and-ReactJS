@@ -28,7 +28,8 @@ var Usuario			= React.createClass( {
 var User_ctrl	= function () {
 	this.usuario = { 
 		nombre		: 'Clark',
-		apellido	: 'Kent' };
+		apellido	: 'Kent' 
+	}
 }
 //*/
 
