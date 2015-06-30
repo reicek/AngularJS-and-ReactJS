@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="robots" content="noindex, nofollow">
+	<link rel="shortcut icon" href="https://static.platzi.com/static/images/logos/platzi_favicon.01ca534ca7d3.png">
+	
+	<title>ReactJS and AngularJS</title>
+	
+	<link href="css/style.css" rel="stylesheet"></link>
+</head>
+<body ng-app="app" ng-controller="user_ctrl as sesion">
+	<header>
+		<p>ReactJS and AngularJS</p>
+	</header>
+
+	<section>
+		<article>
+			<form>
+				<fieldset>
+					<legend>¿Como te llamas?</legend>
+					<input type="text" ng-model="sesion.usuario.nombre"		placeholder="Nombre"/>
+					<input type="text" ng-model="sesion.usuario.apellido"	placeholder="Apellido(s)"/>
+				</fieldset>
+			  </form>
+		</article>
+		<article>
+			<usuario nombre="sesion.usuario.nombre" apellido="sesion.usuario.apellido"/>
+		</article>
+	</section>
+	
+	<script src="bower_components/react/react.js"></script>
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/ngReact/ngReact.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
