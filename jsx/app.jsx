@@ -27,7 +27,7 @@ var Usuario			= React.createClass( {
 	},
 
 	render: function() {
-		return <span>Hello {this.props.nombre} {this.props.apellido}</span>;
+		return <span>Hola {this.props.nombre} {this.props.apellido}</span>;
 	}
 } );
 //*/
