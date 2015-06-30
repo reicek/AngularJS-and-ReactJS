@@ -11,25 +11,25 @@
 var app				= angular.module( 'app', ['react'] );
 //*/
 
-//*		Create ReactJS visualization in JSX
-var Usuario			= React.createClass( {
-	propTypes: {
-		nombre		: React.PropTypes.string.isRequired,
-		apellido	: React.PropTypes.string.isRequired
-	},
-
-	render: function() {
-		return <span>Hola {this.props.nombre} {this.props.apellido}</span>;
-	}
-} );
-//*/
-
 //*		Assign default values in the Angular Controller
 var User_ctrl	= function () {
 	this.usuario = { 
 		nombre		: 'Clark',
 		apellido	: 'Kent' };
 }
+//*/
+
+//*		Create ReactJS visualization in JSX
+var Usuario			= React.createClass( {displayName: "Usuario",
+	propTypes: {
+		nombre		: React.PropTypes.string.isRequired,
+		apellido	: React.PropTypes.string.isRequired
+	},
+
+	render: function() {
+		return React.createElement("span", null, "Hola ", this.props.nombre, " ", this.props.apellido);
+	}
+} );
 //*/
 
 //*		Define AngularJS controller
